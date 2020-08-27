@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+.register {
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] ,input[type=tel]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus ,input[type="tel"]:focus {
+  background-color: rgb(194, 189, 189);
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.btn {
+  width: 100%;  
+  background-color: #4CAF50;
+  border-radius:5px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  display:inline-block;
+  text-align: center;
+  font-size: 15px;
+}
+</style>
+</head>
+<body>
+  <div class="register">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+      <form method="post" action="save2.php">
+        First Name:<input type="text" placeholder="firstname" name="first_name"><br><br>
+        Last Name:<input type="text" placeholder="lastname" name="lastname"><br><br>
+        Phone Number:<input type="tel" placeholder="phone number" name="telno"><br><br>
+        Enter your e-mail id:<input type="text"placeholder="email" name="email"><br><br>
+        Password:<input type="password" placeholder="password "name="password"><br><br>
+        <!-- <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female --><br><br>
+        <!-- <input type="submit" name="SAVE"> -->
+        <a class="btn">SUBMIT</a>
+      </form>
+  </div>
+<div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+</body>
+</html>
